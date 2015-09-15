@@ -1,0 +1,7 @@
+Problem Statement: Let methods B and F be sensitive methods.  Return the sensitive methods that are called.
+
+var B = app.methods("B")
+var F = app.methods("F")
+var sensitive = B.union(F)
+var callEdges = universe.edgesTaggedWithAny(XCSG.Call).retainEdges()
+show(callEdges.reverseStep(sensitive).leaves())
