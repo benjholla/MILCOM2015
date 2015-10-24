@@ -22,6 +22,7 @@ public class DiscoverReadPhoneStateUsage extends Analyzer {
 
 	@Override
 	protected Q evaluateEnvelope() {
+		PermissionMapping.applyTags(19);
 		Q readPhoneStatePermissionMethods = PermissionMapping.getMethods(Permission.READ_PHONE_STATE, 19);
 		return CommonQueries.interactions(appContext, readPhoneStatePermissionMethods, XCSG.Call);
 	}
