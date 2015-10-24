@@ -1,0 +1,3 @@
+cd ~/Desktop/MILCOM/eclipse/
+
+./eclipse -application toolbox.analysis.Headless -nosplash -consoleLog -data ../headless-workspace/ -import ~/Desktop/FlashBang/FlashBang.apk -sdk-bundle-path ~/Desktop/MILCOM/android-sdks/ -output ~/Desktop/FlashBang/FlashBang.xml -remove-imported-projects-after-analysis -vmargs -Dsdtcore.headless=true
